@@ -7,3 +7,5 @@ Deixei na pasta "Dependencias" istaladores do Maven, Firebird e JDK.
 Na pasta "Collection Postman", existe um arquivo json exportado do Postman, contendo uma coleção com todos os endpoints.
 
 Para executar a aplicação, basta executar o seguinte comando no terminal "mvn spring-boot:run --debug".
+
+**IMPORTANTE** No arquivo "api\src\main\resources\application.properties" defina o caminho onde o banco de dados se encontra no seu ambiente"
