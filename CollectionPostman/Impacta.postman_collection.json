@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "9babdf7e-109e-4870-abe9-6619d1eecda9",
+		"name": "Impacta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29226095"
+	},
+	"item": [
+		{
+			"name": "/api/v1/os",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 11,\r\n    \"numero\": 25100,\r\n    \"descricao\": \"Teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/os",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"os"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/os/{numero}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/os/25094",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						"25094"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/os/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/os",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"os"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/os/{numero}/equipamento///",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 21,\r\n    \"numero\": 25100,\r\n    \"indice\": 1,\r\n    \"equipamento\": \"Equip. Teste\",\r\n    \"problema\": \"Teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/os/25100/equipamento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						"25100",
+						"equipamento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/os/{numero}/equipamento/{indice}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/os/25093/equipamento/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						"25093",
+						"equipamento",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/os/{numero}/equipamento/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/os/25093/equipamento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						"25093",
+						"equipamento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/os/equipamento?descricao={descricao}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/os/equipamento/roteador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						"equipamento",
+						"roteador"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
