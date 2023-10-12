@@ -80,7 +80,7 @@
 			"response": []
 		},
 		{
-			"name": "/api/v1/os/{numero}/equipamento///",
+			"name": "/api/v1/os/{numero}/equipamento/",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -164,7 +164,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/v1/os/equipamento/roteador",
+					"raw": "http://localhost:8080/api/v1/os/equipamento?descricao=roteador",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -174,8 +174,13 @@
 						"api",
 						"v1",
 						"os",
-						"equipamento",
-						"roteador"
+						"equipamento"
+					],
+					"query": [
+						{
+							"key": "descricao",
+							"value": "roteador"
+						}
 					]
 				}
 			},
