@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import impacta.api.Service.EquipamentoService;
 import impacta.api.Service.OrdemServicoService;
@@ -27,8 +28,8 @@ public class ApiImpactaController
     @Autowired
     private OrdemServicoService OrdemServicoService;
 
-    @GetMapping("/os/equipamento/{descricao}")
-    public List<Equipamento> Pesquisa(@PathVariable String descricao) {
+    @GetMapping("/os/equipamento")
+    public List<Equipamento> Pesquisa(@RequestParam("descricao") String descricao) {
         return EquipamentoService.encontrarEquipamentoComDescricao(descricao);
     }
 
